@@ -102,8 +102,8 @@ class PrgComponent extends Component {
 		}
 
 		$model = $this->controller->modelClass;
-		if (!empty($settings['model'])) {
-			$model = $settings['model'];
+		if (!empty($this->_defaults['presetForm']['model'])) {
+			$model = $this->_defaults['presetForm']['model'];
 		}
 
 		if ($this->controller->presetVars === true) {
